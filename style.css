@@ -5,13 +5,30 @@
 }
 
 body {
-  background-color: #111;
-  display: flex;
+  background-color: #444;
+  text-align: center;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+button {
+  height: 30px;
+  width: 50px;
+  border: 2px solid black;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -33,4 +50,21 @@ body {
 
 .square:hover {
   transition-duration: 0s;
+}
+
+.under {
+  margin-bottom: 1px;
+}
+
+.button {
+  display: flex;
+}
+
+.left {
+  flex-basis: 50%;
+}
+
+.right {
+  flex-basis: 50%;
+  padding-top: 30px;
 }
