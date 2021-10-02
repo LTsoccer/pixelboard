@@ -96,6 +96,37 @@ document.addEventListener('keypress', function(event) {
 
 });
 
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 37) {
+        activeIndex = activeIndex - 1;
+        if (activeIndex % WIDTH === (WIDTH - 1)) {
+            activeIndex += WIDTH;
+        }
+        setColor(getSquareByIndex(activeIndex));
+    }
+    if (event.keyCode === 38) {
+        activeIndex = activeIndex - WIDTH;
+        if (activeIndex <= 0) {
+            activeIndex += (HEIGHT * WIDTH);
+        }
+        setColor(getSquareByIndex(activeIndex));
+    }
+    if (event.keyCode === 40) {
+        activeIndex = activeIndex + WIDTH;
+        if (activeIndex >= (HEIGHT * WIDTH)) {
+            activeIndex -= (HEIGHT * WIDTH);
+        }
+        setColor(getSquareByIndex(activeIndex));
+    }
+    if (event.keyCode === 39) {
+        activeIndex = activeIndex + 1;
+        if (activeIndex % WIDTH === 0) {
+            activeIndex -= WIDTH;
+        }
+        setColor(getSquareByIndex(activeIndex));
+    }
+});
+
 const left = document.getElementById("left");
 left.addEventListener('click', function(event) {
     activeIndex = activeIndex - 1;
@@ -135,4 +166,12 @@ right.addEventListener('click', function(event) {
 const clearScreen = document.getElementById("clear");
 clearScreen.addEventListener('click', function(event) {
     clear();
+});
+
+const fillScreen = document.getElementById("fill");
+fillScreen.addEventListener('click', function(event) {
+    const squares = document.getElementsByClassName("square");
+    for (let square of squares) {
+        setTimeout( () => setColor(square), 100);
+    }
 });

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
     <title>Hoverboard</title>
   </head>
   <body>
@@ -13,15 +16,24 @@
     </div>
     <div class="button">
     <div class="left">
-    <button id="up">Up</button>
+    <button id="up">
+      <img src="images/outline_arrow_upward_black_24dp.png" alt="up arrow">
+    </button>
     <div class="under">
-      <button id="left">Left</button>
-      <button id="right">Right</button>
+      <button id="left">
+        <img src="images/outline_arrow_back_black_24dp.png" alt="left arrow">
+      </button>
+      <button id="right">
+        <img src="images/outline_arrow_forward_black_24dp.png" alt="right arrow">
+      </button>
     </div>
-    <button id="down">Down</button>
+    <button id="down">
+      <img src="images/outline_arrow_downward_black_24dp.png" alt="down arrow">
+    </button>
   </div>
   <div class="right">
     <button id="clear">Clear</button>
+    <button id="fill">Fill All</button>
   </div>
 </div>
     
