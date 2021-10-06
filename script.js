@@ -163,6 +163,51 @@ right.addEventListener('click', function(event) {
     setColor(getSquareByIndex(activeIndex));
 });
 
+const north_east = document.getElementById("north_east");
+north_east.addEventListener('click', function(event) {
+    activeIndex = activeIndex - WIDTH + 1;
+    if (activeIndex <= 0) {
+        activeIndex += (HEIGHT * WIDTH);
+    }
+    if (activeIndex % WIDTH === 0) {
+        activeIndex -= WIDTH;
+    }
+    setColor(getSquareByIndex(activeIndex));
+});
+const north_west = document.getElementById("north_west");
+north_west.addEventListener('click', function(event) {
+    activeIndex = activeIndex - WIDTH - 1;
+    if (activeIndex <= 0) {
+        activeIndex += (HEIGHT * WIDTH);
+    }
+    if (activeIndex % WIDTH === (WIDTH - 1)) {
+        activeIndex += WIDTH;
+    }
+    setColor(getSquareByIndex(activeIndex));
+});
+const south_east = document.getElementById("south_east");
+south_east.addEventListener('click', function(event) {
+    activeIndex = activeIndex + WIDTH + 1;
+    if (activeIndex >= (HEIGHT * WIDTH)) {
+        activeIndex -= (HEIGHT * WIDTH);
+    }
+    if (activeIndex % WIDTH === 0) {
+        activeIndex -= WIDTH;
+    }
+    setColor(getSquareByIndex(activeIndex));
+});
+const south_west = document.getElementById("south_west");
+south_west.addEventListener('click', function(event) {
+    activeIndex = activeIndex + WIDTH - 1;
+    if (activeIndex >= (HEIGHT * WIDTH)) {
+        activeIndex -= (HEIGHT * WIDTH);
+    }
+    if (activeIndex % WIDTH === (WIDTH - 1)) {
+        activeIndex += WIDTH;
+    }
+    setColor(getSquareByIndex(activeIndex));
+});
+
 const clearScreen = document.getElementById("clear");
 clearScreen.addEventListener('click', function(event) {
     clear();
