@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
-    <title>Hoverboard</title>
-  </head>
-  <body>
-    <h1>Hoverboard</h1>
-    <div class="flex">
-      <div class="container" id="container"></div>
-    </div>
-    <div class="button">
-    <div class="left">
-    <button id="up">
-      <img src="images/outline_arrow_upward_black_24dp.png" alt="up arrow">
-    </button>
-    <div class="under">
-      <button id="left">
-        <img src="images/outline_arrow_back_black_24dp.png" alt="left arrow">
-      </button>
-      <button id="right">
-        <img src="images/outline_arrow_forward_black_24dp.png" alt="right arrow">
-      </button>
-    </div>
-    <button id="down">
-      <img src="images/outline_arrow_downward_black_24dp.png" alt="down arrow">
-    </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Hoverboard</title>
+</head>
+
+<body>
+  <h1>Hoverboard</h1>
+  <div class="flex">
+    <div class="container" id="container"></div>
   </div>
   <div class="button">
     <div class="left">
-    <button id="north_west">
-      <img src="images/baseline_north_west_black_24dp.png" alt="up arrow">
-    </button>
-    <button id="north_east">
-      <img src="images/baseline_north_east_black_24dp.png" alt="left arrow">
-    </button>
-    <div class="under">
-      <button id="south_west">
-        <img src="images/baseline_south_west_black_24dp.png" alt="down arrow">
+      <button id="up">
+        <img src="images/outline_arrow_upward_black_24dp.png" alt="up arrow">
       </button>
-      <button id="south_east">
-        <img src="images/baseline_south_east_black_24dp.png" alt="right arrow">
+      <div class="under">
+        <button id="left">
+          <img src="images/outline_arrow_back_black_24dp.png" alt="left arrow">
+        </button>
+        <button id="right">
+          <img src="images/outline_arrow_forward_black_24dp.png" alt="right arrow">
+        </button>
+      </div>
+      <button id="down">
+        <img src="images/outline_arrow_downward_black_24dp.png" alt="down arrow">
       </button>
+      </div>
+      <div class="middle">
+      <button id="north_west">
+        <img src="images/baseline_north_west_black_24dp.png" alt="up arrow">
+      </button>
+      <button id="north_east">
+        <img src="images/baseline_north_east_black_24dp.png" alt="left arrow">
+      </button>
+      <div class="under">
+        <button id="south_west">
+          <img src="images/baseline_south_west_black_24dp.png" alt="down arrow">
+        </button>
+        <button id="south_east">
+          <img src="images/baseline_south_east_black_24dp.png" alt="right arrow">
+        </button>
+      </div>
+    </div>
+    <div class="right">
+      <button id="clear">Clear</button>
+      <button id="fill">Fill All</button>
     </div>
   </div>
-  <div class="right">
-    <button id="clear">Clear</button>
-    <button id="fill">Fill All</button>
-  </div>
-</div>
-    
-    <script src="script.js"></script>
-  </body>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

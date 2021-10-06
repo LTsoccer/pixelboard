@@ -70,7 +70,11 @@ h1 {
 }
 
 .left {
-  flex-basis: 50%;
+  flex-basis: 25%;
+}
+
+.middle {
+  flex-basis: 25%;
 }
 
 .right {
